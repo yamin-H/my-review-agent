@@ -1,0 +1,19 @@
+{
+  "name": "my-agent",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w apps/api",
+    "build:api": "npm run build -w apps/api",
+    "typecheck": "npm run typecheck -w apps/api"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6"
+  }
+}
